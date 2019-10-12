@@ -1,18 +1,24 @@
 import React from 'react';
 import Scrollspy from 'react-scrollspy';
-
+import config from '../../config';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Scroll from '../components/Scroll';
 import overLayPic from '../assets/images/overlay.png';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 const sections = [
   { id: 'one', bg: require('../assets/images/pic01.jpg') },
   { id: 'two', bg: require('../assets/images/pic02.jpg') },
   { id: 'three', bg: require('../assets/images/pic03.jpg') },
 ];
+const cliqsPic = require('../assets/images/Cliqs.png')
+const toDoPic = require('../assets/images/Todo.png')
+const fruitStand = require('../assets/images/fruitStand.png')
+const band = require('../assets/images/band.png')
+const oc1= require('../assets/images/OC1.png')
+const oc2= require('../assets/images/OC2.png')
 const IndexPage = () => (
   <Layout>
     <Header />
@@ -24,15 +30,33 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>Who I am</h2>
+            <h2>Projects</h2>
           </header>
-          <p>
-            Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
-            pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed
-            adipiscing eu amet interdum lorem blandit vis ac commodo aliquet
-            integer vulputate phasellus lorem ipsum dolor lorem magna consequat
-            sed etiam adipiscing interdum.
-          </p>
+          <a href='https://github.com/cjuber/cliqs'>
+          <img src={cliqsPic} height='300'></img>
+          </a>
+        <h3>Cliqs</h3>
+        <p>A social media site based on groups<br/>
+        Using Node, React, Redux, Express, Massive, Sockets, SASS</p>
+        <a href='https://github.com/cjuber/noDB/tree/master/nodb'>
+          <img src={toDoPic} height='300'></img>
+          </a>
+        <h3>To Do List</h3>
+        <p>A to do list <br/>
+        Using Node, React </p>
+        <a href='https://github.com/cjuber/html-sass'>
+        <img src={fruitStand} height='350' alt=""></img>
+        </a>
+        <p>A simple HTML page for a Fruit Stand <br/>
+        using HTML and SASS, mobile responsive</p>
+        <a href='https://github.com/cjuber/html-sass'>
+        <img src={band} height='350' alt=""></img>
+        </a>
+        <p>A simple HTML page for a Rock band <br/>
+        using HTML and SASS, mobile responsive</p>
+
+
+        
         </div>
         <Scroll type="id" element="two">
           <a href="#two" className="goto-next ">
@@ -49,30 +73,20 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>Stuff I do</h2>
+            <h2>In Progress</h2>
           </header>
           <p>
-            Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum
-            lorem blandit vis ac commodo aliquet vulputate.
+            Projects I'm currently working on
           </p>
-          <ul className="icons-grid">
-            <li>
-              <span className="icon major fa-camera-retro" />
-              <h3>Photography</h3>
-            </li>
-            <li>
-              <span className="icon major fa-pencil" />
-              <h3>Blogging</h3>
-            </li>
-            <li>
-              <span className="icon major fa-code" />
-              <h3>Web Development</h3>
-            </li>
-            <li>
-              <span className="icon major fa-coffee" />
-              <h3>Sipping Coffee</h3>
-            </li>
-          </ul>
+         <a href='https://github.com/Oil-Change/GroupProject'>
+           <img src={oc1} width='400'></img>
+           <br/>
+           <br/>
+           <img src={oc2} width='400'></img>
+         </a>
+         <p>An oil change app to schedule a pick up of your car, get an oil change and drop it off for you   <br/>
+           Using Node, React, Redux, Express, Sockets, Stripe, Twillio, Material-ui
+           </p>
         </div>
         <Scroll type="id" element="three">
           <a href="#three" className="goto-next ">
@@ -89,14 +103,41 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>One more thing</h2>
+            <h2>About me</h2>
           </header>
+          
           <p>
-            Aliquam ante ac id. Adipiscing interdum lorem praesent fusce
-            pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed
-            adipiscing eu amet interdum lorem blandit vis ac commodo aliquet
-            integer vulputate phasellus lorem ipsum dolor lorem magna consequat
-            sed etiam adipiscing interdum.
+            I'm a full stack web developer. Besides coding I enjoy movies, comics (mainly Batman), and the Utah Jazz. 
+            I grew up in Utah and spent some time in Holland and Belgium. I studied digital media at Utah Valley University 
+            and am currently enrolled in their web development program. I've also received my web developers certificate from DevMountain.
+            I'm currently living in Utah County with my wife and three children.  
+            <br/><br/>My skills include
+            <ul className='skills'>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SASS</li>
+              <li>Javascript</li>
+              <li>Node.js</li>
+              <li>React</li>
+              <li>Vue</li>
+              <li>Express</li>
+              <li>Axios</li>
+              <li>Postgresql</li>
+              <li>Redux</li>
+              <li>Jest</li>
+              <li>Sockets</li>
+              
+            </ul>
+          </p>
+          <p>
+            Software Skills
+            <ul className='skills'>
+            <li>Postman API</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Premiere Pro</li>
+            <li>After Effects</li>
+            </ul>
           </p>
         </div>
         <Scroll type="id" element="footer">
@@ -109,10 +150,10 @@ const IndexPage = () => (
 
     <section id="footer">
       <div className="container">
-        <header className="major">
+        <header className="icons">
           <h2>Get in touch</h2>
         </header>
-        <form method="post" action="#">
+        {/* <form method="post" action="#">
           <div className="row gtr-uniform">
             <div className="col-6 col-12-xsmall">
               <input type="text" name="name" id="name" placeholder="Name" />
@@ -140,8 +181,19 @@ const IndexPage = () => (
               </ul>
             </div>
           </div>
-        </form>
-        <Link to="/Elements"> Check out Elements page</Link>
+        </form> */}
+        <ul className="icons">
+        {config.socialLinks.map(social => {
+          const { icon, name, url } = social;
+          return (
+            <li key={url}>
+              <a href={url} className={`icon alt ${icon}`}>
+                <span className="label">{name}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
       </div>
       <Footer />
     </section>
