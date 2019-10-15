@@ -633,12 +633,12 @@
 		}
 	}
 
-	input[type="checkbox"] {
-		& + label {
-			&:before {
-			}
-		}
-	}
+	// input[type="checkbox"] {
+	// 	& + label {
+	// 		// &:before {
+	// 		// }
+	// 	}
+	// }
 
 	input[type="radio"] {
 		& + label {

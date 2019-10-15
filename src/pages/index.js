@@ -33,13 +33,13 @@ const IndexPage = () => (
             <h2>Projects</h2>
           </header>
           <a href='https://github.com/cjuber/cliqs'>
-          <img src={cliqsPic} height='300'></img>
+          <img src={cliqsPic} height='300' alt=""></img>
           </a>
         <h3>Cliqs</h3>
         <p>A social media site based on groups<br/>
         Using Node, React, Redux, Express, Massive, Sockets, SASS</p>
         <a href='https://github.com/cjuber/noDB/tree/master/nodb'>
-          <img src={toDoPic} height='300'></img>
+          <img src={toDoPic} height='300' alt=""></img>
           </a>
         <h3>To Do List</h3>
         <p>A to do list <br/>
@@ -79,10 +79,10 @@ const IndexPage = () => (
             Projects I'm currently working on
           </p>
          <a href='https://github.com/Oil-Change/GroupProject'>
-           <img src={oc1} width='400'></img>
+           <img src={oc1} width='400' alt=""></img>
            <br/>
            <br/>
-           <img src={oc2} width='400'></img>
+           <img src={oc2} width='400' alt=""></img>
          </a>
          <p>An oil change app to schedule a pick up of your car, get an oil change and drop it off for you   <br/>
            Using Node, React, Redux, Express, Sockets, Stripe, Twillio, Material-ui
