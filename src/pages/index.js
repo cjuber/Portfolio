@@ -15,7 +15,7 @@ const sections = [
 ];
 const cliqsPic = require('../assets/images/Cliqs.png')
 const toDoPic = require('../assets/images/Todo.png')
-const fruitStand = require('../assets/images/fruitStand.png')
+// const fruitStand = require('../assets/images/fruitStand.png')
 const band = require('../assets/images/band.png')
 const oc1= require('../assets/images/OC1.png')
 const oc2= require('../assets/images/OC2.png')
@@ -45,7 +45,7 @@ const IndexPage = () => (
         <p>A to do list <br/>
         Using Node, React </p>
         <a href='https://github.com/cjuber/html-sass'>
-        <img src={fruitStand} height='350' alt=""></img>
+        {/* <img src={fruitStand} height='350' alt=""></img> */}
         </a>
         <p>A simple HTML page for a Fruit Stand <br/>
         using HTML and SASS, mobile responsive</p>
