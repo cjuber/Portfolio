@@ -31,6 +31,7 @@ const IndexPage = () => (
         <div className="content">
           <header className="major">
             <h2>Projects</h2>
+            <p>Click on the image to see the Github repository</p>
           </header>
           <a href='https://github.com/cjuber/cliqs'>
           <img src={cliqsPic} height='300' alt=""></img>
