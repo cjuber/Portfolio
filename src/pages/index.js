@@ -20,6 +20,7 @@ const band = require('../assets/images/band.png')
 const oc1= require('../assets/images/OC1.png')
 const oc2= require('../assets/images/OC2.png')
 const l2l= require('../assets/images/l2l.png')
+const badge= require('../assets/images/badge.png')
 const IndexPage = () => (
   <Layout>
     <Header />
@@ -35,10 +36,17 @@ const IndexPage = () => (
             
           </header>
           <p>
-            I'm a full stack web developer. Besides coding I enjoy movies, comics (mainly Batman), and the Utah Jazz. 
-            I grew up in Utah and spent some time in Holland and Belgium. I studied digital media at Utah Valley University 
-            and am currently enrolled in their web development program. I've also received my web developers certificate from DevMountain.
-            I'm currently living in Utah County with my wife and three children.  
+          I’m an Utah native who enjoys everything digital, loves the Utah Jazz and comic books. I have also lived abroad in Belgium and through that experience, 
+          I have grown to appreciate the vast diversity in this world. Even though I am certified in full-stack web development, it is only one tool on my utility belt. 
+          I am currently enrolled at Utah Valley University, in the digital media program and intend on completing my undergraduate studies there.
+          <br/>
+          You can see my DevMountain certification here.
+           <br/>   
+         
+          <a href='https://www.youracclaim.com/badges/8fab2baf-0f0a-495a-9a92-8c46944dd185/public_url'>
+              <img src={badge}></img>
+            </a>
+            
             <br/><br/>My skills include
             <ul className='skills'>
               <li>HTML</li>
@@ -68,8 +76,7 @@ const IndexPage = () => (
             </ul>
           </p>
 
-
-
+          
           
         
         </div>
