@@ -19,6 +19,7 @@ const toDoPic = require('../assets/images/Todo.png')
 const band = require('../assets/images/band.png')
 const oc1= require('../assets/images/OC1.png')
 const oc2= require('../assets/images/OC2.png')
+const l2l= require('../assets/images/l2l.png')
 const IndexPage = () => (
   <Layout>
     <Header />
@@ -30,83 +31,9 @@ const IndexPage = () => (
         </span>
         <div className="content">
           <header className="major">
-            <h2>Projects</h2>
-            <p>Click on the image to see the Github repository</p>
+            <h2>About Me</h2>
+            
           </header>
-          <a href='https://github.com/cjuber/cliqs'>
-          <img src={cliqsPic} height='300' alt=""></img>
-          </a>
-        <h3>Cliqs</h3>
-        <p>A social media site based on groups<br/>
-        Using Node, React, Redux, Express, Massive, Sockets, SASS</p>
-        <a href='https://github.com/cjuber/noDB/tree/master/nodb'>
-          <img src={toDoPic} height='300' alt=""></img>
-          </a>
-        <h3>To Do List</h3>
-        <p>A to do list <br/>
-        Using Node, React </p>
-        {/* <a href='https://github.com/cjuber/html-sass'>
-        <img src={fruitstand} height='350' alt=""></img>
-        </a>
-        <p>A simple HTML page for a Fruit Stand <br/>
-        using HTML and SASS, mobile responsive</p> */}
-        <a href='https://github.com/cjuber/html-sass'>
-        <img src={band} height='350' alt=""></img>
-        </a>
-        <p>A simple HTML page for a Rock band <br/>
-        using HTML and SASS, mobile responsive</p>
-
-
-        
-        </div>
-        <Scroll type="id" element="two">
-          <a href="#two" className="goto-next ">
-            Next
-          </a>
-        </Scroll>
-      </div>
-    </section>
-
-    <section id="two" className="main special">
-      <div className="container">
-        <span className="image fit primary">
-          <img src={sections[1].bg} alt="" />
-        </span>
-        <div className="content">
-          <header className="major">
-            <h2>In Progress</h2>
-          </header>
-          <p>
-            Projects I'm currently working on
-          </p>
-         <a href='https://github.com/Oil-Change/GroupProject'>
-           <img src={oc1} width='400' alt=""></img>
-           <br/>
-           <br/>
-           <img src={oc2} width='400' alt=""></img>
-         </a>
-         <p>An oil change app to schedule a pick up of your car, get an oil change and drop it off for you   <br/>
-           Using Node, React, Redux, Express, Sockets, Stripe, Twillio, Material-ui
-           </p>
-        </div>
-        <Scroll type="id" element="three">
-          <a href="#three" className="goto-next ">
-            Next
-          </a>
-        </Scroll>
-      </div>
-    </section>
-
-    <section id="three" className="main special">
-      <div className="container">
-        <span className="image fit primary">
-          <img src={sections[2].bg} alt="" />
-        </span>
-        <div className="content">
-          <header className="major">
-            <h2>About me</h2>
-          </header>
-          
           <p>
             I'm a full stack web developer. Besides coding I enjoy movies, comics (mainly Batman), and the Utah Jazz. 
             I grew up in Utah and spent some time in Holland and Belgium. I studied digital media at Utah Valley University 
@@ -140,6 +67,97 @@ const IndexPage = () => (
             <li>After Effects</li>
             </ul>
           </p>
+
+
+
+          
+        
+        </div>
+        <Scroll type="id" element="two">
+          <a href="#two" className="goto-next ">
+            Next
+          </a>
+        </Scroll>
+      </div>
+    </section>
+
+    <section id="two" className="main special">
+      <div className="container">
+        <span className="image fit primary">
+          <img src={sections[1].bg} alt="" />
+        </span>
+        <div className="content">
+          <header className="major">
+            <h2>Projects</h2>
+            <p>Click on the image to see the Github repository</p>
+          </header>
+          <h1>Cliqs</h1>
+          <a href='https://github.com/cjuber/cliqs'>
+          <img src={cliqsPic} height='300' alt=""></img>
+          </a>
+        
+        <p>A social media site based on groups<br/>
+        Using Node, React, Redux, Express, Massive, Sockets, SASS</p>
+        <h1>To Do List</h1>
+        <a href='https://github.com/cjuber/noDB/tree/master/nodb'>
+          <img src={toDoPic} height='300' alt=""></img>
+          </a>
+       
+        <p>A to do list <br/>
+        Using Node, React </p>
+        {/* <a href='https://github.com/cjuber/html-sass'>
+        <img src={fruitstand} height='350' alt=""></img>
+        </a>
+        <p>A simple HTML page for a Fruit Stand <br/>
+        using HTML and SASS, mobile responsive</p> */}
+        <h1>Band Page</h1>
+        <a href='https://github.com/cjuber/html-sass'>
+        <img src={band} height='350' alt=""></img>
+        </a>
+        <p>A simple HTML page for a Rock band <br/>
+        using HTML and SASS, mobile responsive</p>
+
+        <h1>Oil-Change</h1>
+        <a href='https://github.com/Oil-Change/GroupProject'>
+           <img src={oc1} width='400' alt=""></img>
+           <br/>
+           <br/>
+           <img src={oc2} width='400' alt=""></img>
+         </a>
+         <p>This was a collaborative application for an oil change app to schedule a pick up of your car, get an oil change and drop it off for you   <br/>
+           Using Node, React, Redux, Express, Sockets, Stripe, Twillio, Material-ui
+           </p>
+
+        </div>
+        <Scroll type="id" element="three">
+          <a href="#three" className="goto-next ">
+            Next
+          </a>
+        </Scroll>
+      </div>
+    </section>
+
+    <section id="three" className="main special">
+      <div className="container">
+        <span className="image fit primary">
+          <img src={sections[2].bg} alt="" />
+        </span>
+        <div className="content">
+          <header className="major">
+            <h2>In Progress</h2>
+          </header>
+          
+           <p>
+            Projects I'm currently working on
+          </p>
+         <a href='https://github.com/cjuber/dopu'>
+           <img src={l2l} width='400' alt=""></img>
+           <br/>
+           <br/>
+         </a>
+         <p>A drop off / pick up app for a preschool to track when children are dropped off and picked up by their parents.  <br/>
+           Using Node, React, Redux, Express, Massive, Sockets, SASS
+           </p>
         </div>
         <Scroll type="id" element="footer">
           <a href="#footer" className="goto-next ">
